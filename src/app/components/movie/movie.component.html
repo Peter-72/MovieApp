@@ -1,0 +1,16 @@
+<app-panel></app-panel>
+<div>
+    <div *ngFor="let movie of movies" class="container">
+
+        <div>
+            <img src={{movie.img}} width="200px" height="300px" />
+        </div>
+
+        <div class="text">
+            <h3 class="title">{{movie.title}}</h3>
+            <h4 class="release-Date">{{movie.releaseDate}}</h4>
+            <h4 class="media-Type">{{movie.mediaType}}</h4>
+            <h4 class="overview">{{movie.overview}}</h4>
+        </div>
+    </div>
+</div>

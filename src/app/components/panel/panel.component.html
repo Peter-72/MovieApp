@@ -1,0 +1,18 @@
+<div class="panel-container">
+  <div class="home-button">
+    <button type="button" class="btn btn-primary home-button2" (click)="goHome()">
+      <i class="fas fa-search"></i>Home
+    </button>
+  </div>
+  <div class="input-group search-bar">
+    <div class="form-outline">
+      <input type="text" class="form-control" placeholder="Search..." [(ngModel)]="searchedText"/>
+    </div>
+    <div style="padding-left: 0.7em;">
+      <button type="button" class="btn btn-primary button" (click)="searchRequested()">
+        <i class="fas fa-search"></i>Search
+      </button>
+    </div>
+  </div>
+</div>
+
